@@ -167,7 +167,7 @@ jobs:
           script: |
             set -e
             source $HOME/.bashrc
-            basedir=$HOME/shiro
+            basedir=/var/lib/docker/volumes/site_shiro/_data
             workdir=$basedir/${{ github.run_number }}
             mkdir -p $workdir
             mkdir -p $basedir/.cache
